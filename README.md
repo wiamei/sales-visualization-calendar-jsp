@@ -52,13 +52,12 @@ projet-ventes/
 3. Ouvrir le projet dans un IDE Java (comme Eclipse) et le configurer comme projet Dynamic Web Project.
 4. Déployer l’application sur un serveur local comme Apache Tomcat.
 5. Accéder à http://localhost:8080/projet-ventes/index.html dans votre navigateur.
-   
-6.L’utilisateur peut alors :
- - Sélectionner une date précise, un mois ou une année dans le calendrier.
- -  Visualiser les ventes agrégées selon la granularité choisie :
-      Par jour : comparaison des ventes à la même date sur plusieurs années.
-      Par mois : comparaison des ventes d’un mois donné sur plusieurs années.
-      Par année : comparaison des ventes annuelles entre différentes années.
+6. L’utilisateur peut alors : <br>
+  - Sélectionner une date précise, un mois ou une année dans le calendrier. <br>
+  - Visualiser les ventes agrégées selon la granularité choisie :<br>
+    -   Par jour : comparaison des ventes à la même date sur plusieurs années.<br>
+    -   Par mois : comparaison des ventes d’un mois donné sur plusieurs années.<br>
+    -   Par année : comparaison des ventes annuelles entre différentes années.
 
 
 
