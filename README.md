@@ -35,11 +35,11 @@ projet-ventes/
 ├── README.md 
 
 ## Modéles d'exécution
-<img src="images/calendrier-dynamique.png" width="500">
+<img src="images/Calendrier-dynamique.png" width="500">
 <img src="images/demo1.png" width="500">
 <img src="images/demo2.png" width="500">
 <img src="images/demo3.png" width="500">
-<img src="images/demo4.png" width="500">
+<img src="images/demo4.png" width="550">
 
 ##  Lancer l’application localement
 1. Cloner ce dépôt :
