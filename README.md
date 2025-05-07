@@ -25,3 +25,28 @@ Cette application web permet à un utilisateur de sélectionner une date, un moi
 | Chart.js           | Lecture de fichiers texte |
 
 
+## Structure du projet
+projet-ventes/
+├── index.html # Interface principale avec le calendrier
+├── afficherVentes.jsp # Génère dynamiquement les graphiques de ventes
+├── data/
+│ └── ventes.log # Fichier de données structurées (historique des ventes)
+├── js/ # Scripts JavaScript liés au calendrier
+├── README.md 
+
+## Modéles d'exécution
+<img src="images/demo1.png" width="500">
+<img src="images/demo2.png" width="500">
+<img src="images/demo3.png" width="500">
+<img src="images/demo4.png" width="500">
+
+##  Lancer l’application localement
+1. Cloner ce dépôt :
+    git clone https://github.com/wiamei/sales-visualization-calendar-jsp.git
+   
+3. Ouvrir le projet dans un IDE Java (comme Eclipse) et le configurer comme projet Dynamic Web Project.
+4. Déployer l’application sur un serveur local comme Apache Tomcat.
+5. Accéder à http://localhost:8080/projet-ventes/index.html dans votre navigateur.
+
+
+
