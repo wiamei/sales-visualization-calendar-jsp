@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--
+			Étudiant : Ichane Wiame 
+			TECH20711  - Développer un produit numérique
+	-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>TP3 - Développer un produit numérique</title>
+	<link rel="stylesheet"
+		  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+		  crossorigin="anonymous">
+	<style>
+	/* Rendre la grandeur de la police du titre adaptative en bas de 600px */
+	@media screen and (max-width: 600px) {
+		h1#titre {font-size: 4em;}
+	}
+	</style>
+	<script src="https://kit.fontawesome.com/622b0c0fcc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container">
+
+		<!-- Button d'aide -->
+		<button id="aide" type="button" class="btn btn-info sticky-top" style="float: right;"
+				data-toggle="modal"
+				data-target="#aideModale">
+			<i class="far fa-question-circle"></i>
+		</button>
+
+		<!-- Fenêtre d'aide -->
+		<div class="modal fade" id="aideModale" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="modalTitle">
+		        	<i class="fas fa-exclamation-circle"></i>
+		        	<span id="titreAideModale">Aide sur l'utilisation de l'interface</span>
+		        </h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div id="corps-aide" class="modal-body">
+				<p>Un clic sur les différents éléments du calendrier permet de visualiser les ventes.</p>
+				<!-- le contenu ici sera ajouté dynamiquement -->
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" id="fermerAide" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+
+		<h1 id="titre" class="display-1 text-center bg-dark text-light">Calendrier</h1>
+	
+		<form id="setCalendrier">
+			<div class="form-row">
+				<div class="form-group col-sm-6">
+					<label for="selectMois">Mois</label>
+					<select class="form-control" id="selectMois"></select>
+				</div>
+				<div class="form-group col-sm-6">
+					<label for="inputAnnee">Année</label>
+					<input type="text" class="form-control" id="inputAnnee">
+				</div>
+			</div>
+		</form>
+		<div id="calendrier" class="mb-0"></div>
+
+		<h6 class="text-center pt-5 mt-0">
+			Par : @Wiamei <br>
+			TECH20711  - Développer un produit numérique
+		</h6>
+	</div>
+
+    <!-- Scripts JS pour Bootstrap (optionnel) -->
+    <!-- jQuery en premier, ensuite Popper.js, et Bootstrap JS pour terminer -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+
+    <!-- Importation du script JS renfermant les fonctions nécessaires à la génération dynamique du calendrier -->
+	<script src="./scripts/calendrier.js"></script>
+	<!-- Importation du script JS renfermant la fonction nécessaire à la génération dynamique du corps de la fenêtre modale d'aide -->
+	<script src="./scripts/aide.js"></script>
+	<!-- Importation du script gérant l'interactivité dans l'application web -->
+	<script src="./scripts/interaction.js"></script>
+</body>
+</html>
