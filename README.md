@@ -25,6 +25,7 @@ Cette application web permet à un utilisateur de sélectionner une date, un moi
 | Chart.js           | Lecture de fichiers texte |
 
 ## Structure du projet
+```
 projet-ventes/
 ├── index.html               # Interface principale avec le calendrier dynamique
 ├── afficherVentes.jsp       # Génère dynamiquement les graphiques de ventes
@@ -34,6 +35,7 @@ projet-ventes/
     └── aide.js              # Génère le contenu de la fenêtre modale d'aide
     └── calendrier.js        # Construit dynamiquement le tableau du calendrier
     └── interaction.js       # Initialise la page et gère les interactions du calendrier
+```
     
 
 ## Modéles d'exécution
